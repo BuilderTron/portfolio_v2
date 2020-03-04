@@ -81,12 +81,25 @@
                    <h2>SOFTWARE DEVELOPER</h2>
                    <ul>
 
-                       <li><a href="jj"><i class="fa fa-envelope"></i></a></li>
+                       <li><a data-scroll class="nav-link" href="#contact"><i class="fa fa-envelope"></i></a></li>
                        <li><a href="https://www.linkedin.com/in/jjlopezbuilder/"><i class="fa fa-linkedin"></i></a></li>
                        <li><a href="https://github.com/BuilderTron"><i class="fa fa-github"></i></a></li>
                    </ul>
+
+                   {% if name %}
+                     <br>
+                     <center>
+                       <h2> Thanks {{ name }}!</h2>
+                       <p>We received your email & will respond shortly...</p>
+                     </center>
+
+
+                
+                   {% endif %}
+
                </div>
            </div>
+
        </section><!-- /.hero-section -->
 
 
@@ -177,8 +190,8 @@
                <div class="about-wrap row">
                    <div class="col-md-6 ">
                        <div class="section-heading">
-                           <h4>About Me</h4>
-                           <h2>Innovative solutions to boost  <br>your <span>creative projects</span></h2>
+                           <!-- <h4>About Me</h4> -->
+                           <h2>About <span> Jose</span></h2>
                            <p>I love to work in User Experience &amp; User Interface designing. Because I love to solve the design problem and find easy and better solutions to solve it. I always try my best to make good user interface with the best user experience.</p>
                            <a href="#" class="default-btn">Download Resume</a>
                        </div>
@@ -388,7 +401,7 @@
                 <div class="contact-wrap row">
                     <div class="col-md-6">
                         <div class="contact-content">
-                            <h3>Contact Info :</h3>
+                            <h3>Contact Info:</h3>
                             <p>I love to work in User Experience & User Interface designing. <br> Because I love to solve the design problem. </p>
                         </div>
                         <div class="contact-info">
@@ -400,8 +413,10 @@
                         </div>
                     </div>
                     <div class="col-md-6">
+
                         <div class="contact-items">
-                            <form action="contact.php" method="post" id="ajax_form" class="form-horizontal contact-form">
+                            <form action="{% url 'home' %}" method="post" class="form-horizontal contact-form">
+                              {% csrf_token %}
                                 <div class="form-group colum-row row">
                                     <div class="col-sm-6">
                                         <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
