@@ -1,10 +1,15 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
+from django.http import HttpResponse
+from .models import Project
 # Create your views here.
 
 
 
 def home(request):
+
+    projects = Project.objects.all()
+
     if request.method == "POST":
         name = request.POST['name']
         email = request.POST['email']
@@ -20,7 +25,7 @@ def home(request):
         )
 
 
-        return render(request, 'home.html', {'name': name})
+        return render(request, 'home.html', {'name': name}, {'projects':projects})
 
     else:
-        return render(request, 'home.html', {})
+        return render(request, 'home.html', {'projects':projects})

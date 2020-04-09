@@ -4,418 +4,210 @@
 {% block content %}
 
 
-       <section id="home" class="hero-section d-flex align-items-center">
-          <div id="particles-js"></div><!-- Particle -->
-           <div class="container">
-               <div class="hero-content text-center">
-                   <h1><span>JOSE</span> LOPEZ</h1>
-                   <h2>SOFTWARE DEVELOPER</h2>
-                   <ul>
+<!-- TODO Make header editable via admin instead of hardcoded. -->
+
+<section id="home" class="hero-section d-flex align-items-center">
+  <div id="particles-js"></div><!-- Particle -->
+  <div class="container">
+    <div class="hero-content text-center">
+      <h1><span>JOSE</span> LOPEZ</h1>
+      <h2>SOFTWARE DEVELOPER</h2>
+      <ul>
+        <li><span title="LinkedIn"><a href="https://www.linkedin.com/in/jjlopezbuilder/"><i class="fa fa-linkedin"></i></a></span></li>
+        <li><span title="Email"><a data-scroll class="nav-link" href="mailto:jj.lopezbuilder@gmail.com"><i class="fa fa-envelope"></i></a></span></li>
+        <li><span title="GitHub"><a href="https://github.com/BuilderTron"><i class="fa fa-github"></i></a></span></li>
+      </ul>
+      {% if name %}
+      <br>
+      <center>
+        <h2> Thanks {{ name }}!</h2>
+        <p>We received your email & will respond shortly...</p>
+      </center>
+      {% endif %}
+    </div>
+  </div>
+</section><!-- /.hero-section -->
 
 
-                       <li><span title="LinkedIn"><a href="https://www.linkedin.com/in/jjlopezbuilder/"><i class="fa fa-linkedin"></i></a></span></li>
-                       <li><span title="Email"><a data-scroll class="nav-link" href="mailto:jj.lopezbuilder@gmail.com"><i class="fa fa-envelope"></i></a></span></li>
-                       <li><span title="GitHub"><a href="https://github.com/BuilderTron"><i class="fa fa-github"></i></a></span></li>
-                   </ul>
+<!-- Portfolio Projects -->
 
-                   {% if name %}
-                     <br>
-                     <center>
-                       <h2> Thanks {{ name }}!</h2>
-                       <p>We received your email & will respond shortly...</p>
-                     </center>
+<section id="portfolio" class="portfolio-section padding bd-bottom">
+  <div class="container">
 
+    <div class="section-heading text-center mb-40">
+      <h2>Work Portfolio</h2>
+    </div><!-- /.section-heading -->
 
-
-                   {% endif %}
-
-               </div>
-           </div>
-
-       </section><!-- /.hero-section -->
-
-
-       <section id="portfolio" class="portfolio-section padding bd-bottom">
-           <div class="container">
-              <div class="section-heading text-center mb-40">
-                  <h2>Work Portfolio</h2>
-              </div><!-- /.section-heading -->
-              <!-- <ul class="portfolio-filter text-center mb-40">
-                   <li class="active" data-filter="*">All</li>
-                   <li data-filter=".branding">Branding</li>
-                   <li data-filter=".design">Design</li>
-                   <li data-filter=".wordpress">Wordpress</li>
-                   <li data-filter=".marketing">Marketing</li>
-               </ul>
-                -->
-               <div class="portfolio-items row">
-                   <div class="col-lg-4 col-sm-6 padding-15 single-item branding wordpress">
-                       <div class="portfolio-box">
-                           <img src="https://via.placeholder.com/640x640.png?text=Hayato" alt="port">
-                           <div class="portfolio-content">
-                               <h3><a href="#">Branding &amp; Art Design</a></h3>
-                               <p>creative, strategy, Art</p>
-                           </div>
-                           <a href="https://via.placeholder.com/640x640.png?text=Hayato" data-gall="gallery" class="img-lightbox img-popup"><img src="img/expand.svg"/></a>
-                       </div>
-                   </div>
-                   <div class="col-lg-4 col-sm-6 padding-15 single-item design marketing">
-                       <div class="portfolio-box">
-                           <img src="https://via.placeholder.com/640x640.png?text=Hayato" alt="port">
-                           <div class="portfolio-content">
-                               <h3><a href="#">Branding &amp; Art Design</a></h3>
-                               <p>creative, strategy, Art</p>
-                           </div>
-                           <a href="https://via.placeholder.com/640x640.png?text=Hayato" data-gall="gallery" class="img-lightbox img-popup"><img src="img/expand.svg"/></a>
-                       </div>
-                   </div>
-                   <div class="col-lg-4 col-sm-6 padding-15 single-item wordpress branding">
-                       <div class="portfolio-box">
-                           <img src="https://via.placeholder.com/640x640.png?text=Hayato" alt="port">
-                           <div class="portfolio-content">
-                               <h3><a href="#">Branding &amp; Art Design</a></h3>
-                               <p>creative, strategy, Art</p>
-                           </div>
-                           <!-- <a href="https://via.placeholder.com/640x640.png?text=Hayato" data-gall="gallery" class="img-lightbox img-popup"><img src="img/expand.svg"/></a>
-                       </div>
-                   </div>
-                   <div class="col-lg-4 col-sm-6 padding-15 single-item marketing design">
-                       <div class="portfolio-box">
-                           <img src="https://via.placeholder.com/640x640.png?text=Hayato" alt="port">
-                           <div class="portfolio-content">
-                               <h3><a href="#">Branding &amp; Art Design</a></h3>
-                               <p>creative, strategy, Art</p>
-                           </div>
-                           <a href="https://via.placeholder.com/640x640.png?text=Hayato" data-gall="gallery" class="img-lightbox img-popup"><img src="img/expand.svg"/></a>
-                       </div>
-                   </div>
-                   <div class="col-lg-4 col-sm-6 padding-15 single-item design marketing">
-                       <div class="portfolio-box">
-                           <img src="https://via.placeholder.com/640x640.png?text=Hayato" alt="port">
-                           <div class="portfolio-content">
-                               <h3><a href="#">Branding &amp; Art Design</a></h3>
-                               <p>creative, strategy, Art</p>
-                           </div>
-                           <a href="https://via.placeholder.com/640x640.png?text=Hayato" data-gall="gallery" class="img-lightbox img-popup"><img src="img/expand.svg"/></a>
-                       </div>
-                   </div>
-                   <div class="col-lg-4 col-sm-6 padding-15 single-item branding wordpress">
-                       <div class="portfolio-box">
-                           <img src="https://via.placeholder.com/640x640.png?text=Hayato" alt="port">
-                           <div class="portfolio-content">
-                               <h3><a href="#">Branding &amp; Art Design</a></h3>
-                               <p>creative, strategy, Art</p>
-                           </div>
-                           <a href="https://via.placeholder.com/640x640.png?text=Hayato" data-gall="gallery" class="img-lightbox img-popup"><img src="img/expand.svg"/></a>
-                       </div> -->
-                   </div>
-               </div><!-- /.portfolio-items -->
-           </div>
-       </section><!-- /.portfolio-section -->
+    <div class="portfolio-items row">
+      {% for project in projects %}
+      <div class="col-lg-4 col-sm-6 padding-15 single-item branding wordpress">
+        <div class="portfolio-box">
+          <img src="{{ project.image.url }}">
+          <div class="portfolio-content">
+            <h3><a href="{{ project.url }}" style="color:white" >{{ project.title }}</a></h3>
+            <p>{{ project.description }}</p>
+          </div>
+          <a href="{{ project.git_url }}" data-gall="gallery" class="img-lightbox"><img src="static\website\img\GitHub-Mark-Light-32px.png" /></a>
+        </div>
+      </div>
+      {% endfor %}
+    </div><!-- /.portfolio-items -->
+  </div>
+</section><!-- /.portfolio-section -->
 
 
+<!-- About Section -->
 
 
+<section id="about" class="about-section bd-bottom padding bg-grey">
+  <div class="container">
+    <div class="about-wrap row">
+      <div class="col-md-6 ">
+        <div class="section-heading">
+          <!-- <h4>About Me</h4> -->
+          <h2>About <span> Jose</span></h2>
+          <p>Jose Lopez is a Software Developer that can bring a diverse skill set and a creative drive to software and web development. He is proficient in adapting to new language technologies and frameworks to find unique solutions to development
+            problems.
+            <br>
+            <br>
+            Jose enjoys various types of photography and has a passion for travel.
 
-       <section id="about" class="about-section bd-bottom padding bg-grey">
-           <div class="container">
-               <div class="about-wrap row">
-                   <div class="col-md-6 ">
-                       <div class="section-heading">
-                           <!-- <h4>About Me</h4> -->
-                           <h2>About <span> Jose</span></h2>
-                           <p>Jose Lopez is a Software Developer that can bring a diverse skill set and a creative drive to software and web development. He is proficient in adapting to new language technologies and frameworks to find unique solutions to development problems.
-                             <br>
-                             <br>
-                             Jose enjoys various types of photography and has a passion for travel.
-
-                           </p>
-                           <a href="#" class="default-btn">Download Resume</a>
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="about-men d-none d-md-block"></div>
-       </section><!-- /.about-section -->
-
-
-
-<!--
-        <section id="skills" class="skills-section padding">
-			<div class="container">
-				<div class="skill-img d-none d-lg-block"></div>
-				<div class="col-lg-6 offset-lg-6">
-					<div class="skill-content">
-						<div class="skill-wrap wow fadeInLeft" data-wow-delay="0ms" dta-wow-duration="2000ms">
-                        <div class="section-heading">
-                            <h2>Skills</h2>
-                            <p>I always try my best to make good user interface <br>with the best user experience.</p>
-                        </div>
-                        <ul class="skill-items">
-                            <li class="skill-item">
-                                <h5>Photoshop</h5>
-                                <div class="progress">
-                                    <div class="progress-bar wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 80%;">
-                                        <span>80%</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <h5>Indesign</h5>
-                                <div class="progress">
-                                    <div  class="progress-bar wow slideInLeft" data-wow-delay="200ms" data-wow-duration="2000ms" role="progressbar" style="width: 90%;" role="progressbar">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <h5>Javascript</h5>
-                                <div class="progress">
-                                    <div class="progress-bar wow slideInLeft" data-wow-delay="300ms" data-wow-duration="2000ms" role="progressbar" style="width: 75%;" role="progressbar">
-                                        <span>75%</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <h5>Wordpress</h5>
-                                <div class="progress">
-                                    <div class="progress-bar wow slideInLeft" data-wow-delay="400ms" data-wow-duration="2000ms" role="progressbar" style="width: 65%;" role="progressbar">
-                                        <span>65%</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-					</div>
-				</div>
-			</div>
-		</section>
-    <!-- /.skills-section -->
+          </p>
+          <a href="#" class="default-btn">Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-men d-none d-md-block"></div>
+</section><!-- /.about-section -->
 
 
+<!-- Skills Section -->
+
+<section id="services" class="service-section padding bd-bottom">
+  <div class="container">
+    <div class="section-heading text-center mb-40">
+      <h2>Skills</h2>
+      <br>
+    </div>
+    <div class="service-wrap row">
+
+      <!-- Technical Skills -->
+
+      <div class="col-lg-4 col-sm-6 padding-15">
+        <div class="service-item">
+          <i class="icon_tools"></i>
+          <div class="service-content">
+            <h3>Technical</h3>
+            <p>
+              Git (Git Flow)
+              <br>
+              GitHub
+              <br>
+              Chrome Developer Tools
+              <br>
+              VirtualBox
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Front End -->
+
+      <div class="col-lg-4 col-sm-6 padding-15">
+        <div class="service-item">
+          <i class="icon_laptop"></i>
+          <div class="service-content">
+            <h3>Front End</h3>
+            <p>
+              HTML5/CSS
+              <br>
+              Javascript
+              <br>
+              Bootstrap
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back End -->
+
+      <div class="col-lg-4 col-sm-6 padding-15">
+        <div class="service-item">
+          <i class="icon_cloud"></i>
+          <div class="service-content">
+            <h3>Back End</h3>
+            <p>
+              Python
+              <br>
+              Django
+              <br>
+              REST API
+              <br>
+              Vagrant
+              <br>
+              SQLite
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
+<!-- Contact Info -->
 
-       <section id="services" class="service-section padding bd-bottom">
-           <div class="container">
-              <div class="section-heading text-center mb-40">
-                  <h2>Skills</h2>
-                  <br>
+<section id="contact" class="contact-section padding bg-grey">
+  <div class="container">
+    <div class="contact-wrap row">
+      <div class="col-md-6">
+        <div class="contact-content">
+          <h2>Contact Info:</h2>
+          <br>
+          <br>
+          <p> </p>
+        </div>
+        <div class="contact-info">
+          <ul class="contact-list">
+            <li><i class="fa fa-map-marker"></i>Katy, Tx 77493</li>
+            <li><i class="fa fa-phone"></i><a href="tel:+12813800931">281 380 0931</a></li>
+            <li><i class="fa fa-mail-reply"></i><a href="mailto:jj.lopezbuilder@gmail.com">JJ.LopezBuilder@Gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+
+        <div class="contact-items">
+          <form action="{% url 'home' %}" method="post" class="form-horizontal contact-form">
+            {% csrf_token %}
+            <div class="form-group colum-row row">
+              <div class="col-sm-6">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
               </div>
-               <div class="service-wrap row">
-                    <div class="col-lg-4 col-sm-6 padding-15">
-                       <div class="service-item">
-                         <i class="icon_tools"></i>
-                         <div class="service-content">
-                             <h3>Technical</h3>
-                             <p>
-                               Git (Git Flow)
-                             <br>
-                             GitHub
-                             <br>
-                             Chrome Developer Tools
-                             <br>
-                             VirtualBox
-
-                             </p>
-                         </div>
-
-                       </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 padding-15">
-                       <div class="service-item">
-                         <i class="icon_laptop"></i>
-                         <div class="service-content">
-                             <h3>Front End</h3>
-                             <p>
-                               HTML5/CSS
-                             <br>
-                             Javascript
-                             <br>
-                             Bootstrap
-                             <br>
-                             </p>
-                         </div>
-                       </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 padding-15">
-                       <div class="service-item">
-
-                         <i class="icon_cloud"></i>
-                         <div class="service-content">
-                             <h3>Back End</h3>
-                             <p>
-                               Python
-                             <br>
-                             Django
-                             <br>
-                             REST API
-                             <br>
-                             Vagrant
-                             <br>
-                             SQLite
-
-                           </p>
-                         </div>
-
-
-
-
-
-                       </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 padding-15">
-                       <div class="service-item">
-                           <!-- <i class="icon_pencil_alt"></i>
-                           <div class="service-content">
-                               <h3>Soft Skills</h3>
-                               <p>It is a long stablis fact a reader <br>will be instracted</p>
-                           </div> -->
-                       </div>
-                    </div>
-                    <!-- <div class="col-lg-4 col-sm-6 padding-15">
-                       <div class="service-item">
-                           <i class="icon_search"></i>
-                           <div class="service-content">
-                               <h3>Search Optimize</h3>
-                               <p>It is a long stablis fact a reader <br>will be instracted</p>
-                           </div>
-                       </div>
-                    </div> -->
-                    <div class="col-lg-4 col-sm-6 padding-15">
-                       <div class="service-item">
-                           <!-- <i class="icon_camera"></i>
-                           <div class="service-content">
-                               <h3>Photography</h3>
-                               <p>It is a long stablis fact a reader <br>will be instracted</p>
-                           </div> -->
-                       </div>
-                    </div>
-               </div>
-           </div>
-       </section>
-
-
-
-
-<!--
-        <section id="experience" class="experience-section padding bg-grey">
-            <div class="container">
-               <div class="section-heading text-center mb-40">
-                   <h2>Work Experience</h2>
-               </div>
-
-                <div class="experience-items">
-                   <div class="experience-wrap row">
-                        <div class="col-lg-2 col-md-4">
-                            <div class="experience-date">
-                                <h4>December 2010 <br>to Present</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-10 col-md-8">
-                            <div class="experience-content">
-                                <h2>UI/UX DESIGNER <span>New York Times</span></h2>
-                                <p>He lost his bottle squiffy bog bleeding hunky-dory wind up morish tomfoolery spend a penny hanky panky, lemon squeezy vagabond up the kyver fantastic cheeky.!</p>
-                            </div>
-                        </div>
-                   </div>
-                   <div class="experience-wrap row">
-                        <div class="col-lg-2 col-md-4">
-                            <div class="experience-date">
-                                <h4>January 2014 <br>to May 2016</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-10 col-md-8">
-                            <div class="experience-content">
-                                <h2>COMMUNITY MANAGER <span>New York Times</span></h2>
-                                <p>He lost his bottle squiffy bog bleeding hunky-dory wind up morish tomfoolery spend a penny hanky panky, lemon squeezy vagabond up the kyver fantastic cheeky.!</p>
-                            </div>
-                        </div>
-                   </div>
-                   <div class="experience-wrap row">
-                        <div class="col-lg-2 col-md-4">
-                            <div class="experience-date">
-                                <h4>September 2016 <br>to Feb 2018</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-10 col-md-8">
-                            <div class="experience-content no-border">
-                                <h2>PRODUCT DESIGNER <span>New York Times</span></h2>
-                                <p>He lost his bottle squiffy bog bleeding hunky-dory wind up morish tomfoolery spend a penny hanky panky, lemon squeezy vagabond up the kyver fantastic cheeky.!</p>
-                            </div>
-                        </div>
-                   </div>
-                </div>
+              <div class="col-sm-6">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+              </div>
             </div>
-        </section>
-        <!-- /.experiance-section -->
-
-
-
-<!--
-        <section class="cta-section padding">
-            <div class="container">
-                <div class="cta-wrap">
-                   <div class="cta-content text-center">
-                       <h2>Want to work with us? <br>Send us a message!</h2>
-                       <p>I love to work in User Experience & User Interface designing. Because I love to solve <br> the design problem and find easy and better solutions to solve it. </p>
-                       <a href="#" class="default-btn">Contact With Me</a>
-                   </div>
-                </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Message" required></textarea>
+              </div>
             </div>
-        </section><!-- /.cta-section-->
-
-
-
-
-        <section id="contact" class="contact-section padding bg-grey">
-            <div class="container">
-                <div class="contact-wrap row">
-                    <div class="col-md-6">
-                        <div class="contact-content">
-                            <h2>Contact Info:</h2>
-                            <br>
-                            <br>
-                            <p> </p>
-                        </div>
-                        <div class="contact-info">
-                            <ul class="contact-list">
-                                <li><i class="fa fa-map-marker"></i>Katy, Tx 77493</li>
-                                <li><i class="fa fa-phone"></i><a href="tel:+12813800931">281 380 0931</a></li> 
-                                <li><i class="fa fa-mail-reply"></i><a href="mailto:jj.lopezbuilder@gmail.com">JJ.LopezBuilder@Gmail.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-
-                        <div class="contact-items">
-                            <form action="{% url 'home' %}" method="post" class="form-horizontal contact-form">
-                              {% csrf_token %}
-                                <div class="form-group colum-row row">
-                                    <div class="col-sm-6">
-                                        <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-md-12">
-                                        <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Message" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-md-12">
-                                        <button id="submit" class="default-btn" type="submit">Send Message</button>
-                                    </div>
-                                </div>
-                                <div id="form-messages" class="alert" role="alert"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <button id="submit" class="default-btn" type="submit">Send Message</button>
+              </div>
             </div>
-        </section><!-- /.contact-section -->
+            <div id="form-messages" class="alert" role="alert"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /.contact-section -->
 
 
 

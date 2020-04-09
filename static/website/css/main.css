@@ -514,10 +514,10 @@ ul.nav > li > a:hover{color: #dc3545;}
     background-image: url(../img/program2.jpg);
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: 77%;
+    background-size: 80%;
     position: absolute;
     width: 570px;
-    height: 667px;
+    height: 500px;
     right: 40px;
     bottom: 0;
 }
@@ -609,7 +609,7 @@ ul.nav > li > a:hover{color: #dc3545;}
 .portfolio-wrap{}
 .portfolio-box{
     position: relative;
-    cursor: pointer;
+    cursor: default;
     overflow: hidden;
     z-index: 1;
 }
@@ -662,15 +662,23 @@ ul.nav > li > a:hover{color: #dc3545;}
     transform: translateX(-100%);
     transition: all 0.3s ease-in-out;
     z-index: 1;
+		color: #FFFFFF;
+
+
 }
 .portfolio-box:hover .portfolio-content{
     transform: translateX(0);
     transition: all 0.3s ease-in-out;
+		color: #FFFFFF;
+
 }
-.portfolio-content h3 a,
+.portfolio-content h3 a:hover{
+		text-decoration: underline;
+}
 .portfolio-content p{
-    color: #fff;
     margin: 0;
+		color: #FFFFFF;
+
 }
 /*Portfolio Filter
 ====================*/
@@ -780,6 +788,7 @@ ul.nav > li > a:hover{color: #dc3545;}
     color: #dc3545;
     margin-right: 20px;
     font-size: 25px;
+
 }
 .contact-items{}
 .contact-form .form-control{

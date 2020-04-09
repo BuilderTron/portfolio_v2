@@ -1,5 +1,3 @@
-
-
 {% load static %}
 
 <!DOCTYPE html>
@@ -8,148 +6,153 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Jose Lopez Personal Portfolio / CV / Resume / vCard Template.">
-        <meta name="author" content="CrackThemes">
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-        <title>Jose Lopez | Personal Portfolio / Resume </title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jose Lopez Personal Portfolio / CV / Resume / vCard Template.">
+  <meta name="author" content="CrackThemes">
 
-		<link rel="shortcut icon" type="image/x-icon" href="{% static 'website/img/jl_favicon.png' %}">
+  <title>Jose Lopez | Personal Portfolio / Resume </title>
 
-		<!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="{% static 'website/css/font-awesome.min.css' %}">
-        <!-- Elegant Font Icons CSS -->
-        <link rel="stylesheet" href="{% static 'website/css/elegant-font-icons.css' %}">
-        <!-- Elegant Line Icons CSS -->
-        <link rel="stylesheet" href="{% static 'website/css/elegant-line-icons.css' %}">
-		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}">
-        <!-- animate CSS -->
-        <link rel="stylesheet" href="{% static 'website/css/animate.min.css' %}">
-		<!-- Venobox CSS -->
-        <link rel="stylesheet" href="{% static 'website/css/venobox/venobox.css' %}">
-        <!-- Slicknav CSS -->
-        <link rel="stylesheet" href="{% static 'website/css/slicknav.min.css' %}">
-		<!-- OWL-Carousel CSS -->
-        <link rel="stylesheet" href="{% static 'website/css/owl.carousel.css' %}">
-		<!-- Main CSS -->
-        <link rel="stylesheet" href="{% static 'website/css/main.css' %}">
-		<!-- Responsive CSS -->
-        <link rel="stylesheet" href="{% static 'website/css/responsive.css' %}">
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'website/img/jl_favicon.png' %}">
 
-        <script src="{% static 'website/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
-    </head>
-    <body data-spy="scroll" data-target="#navbar" data-offset="60">
-        <!--[if lt IE 8]>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="{% static 'website/css/font-awesome.min.css' %}">
+  <!-- Elegant Font Icons CSS -->
+  <link rel="stylesheet" href="{% static 'website/css/elegant-font-icons.css' %}">
+  <!-- Elegant Line Icons CSS -->
+  <link rel="stylesheet" href="{% static 'website/css/elegant-line-icons.css' %}">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}">
+  <!-- animate CSS -->
+  <link rel="stylesheet" href="{% static 'website/css/animate.min.css' %}">
+  <!-- Venobox CSS -->
+  <link rel="stylesheet" href="{% static 'website/css/venobox/venobox.css' %}">
+  <!-- Slicknav CSS -->
+  <link rel="stylesheet" href="{% static 'website/css/slicknav.min.css' %}">
+  <!-- OWL-Carousel CSS -->
+  <link rel="stylesheet" href="{% static 'website/css/owl.carousel.css' %}">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{% static 'website/css/main.css' %}">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="{% static 'website/css/responsive.css' %}">
+
+  <script src="{% static 'website/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="60">
+  <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id='preloader' >
-            <div class='loader' >
-                <img src="{% static 'website/img/loader.svg' %}" width="80" alt="">
-            </div>
-        </div><!-- Preloader -->
+  <div id='preloader'>
+    <div class='loader'>
+      <img src="{% static 'website/img/loader.svg' %}" width="80" alt="">
+    </div>
+  </div><!-- Preloader -->
 
-        <header id="header" class="header-section">
-            <div class="container">
-                <nav class="navbar">
-                    <a href="#" class="navbar-brand">
-                        <img class="logo-light" src="{% static 'website/img/light_2.png' %}" alt="JL">
-                        <img class="logo-dark" src="{% static 'website/img/dark_1.png' %}" alt="JL">
-                    </a>
-                    <div class="d-flex menu-wrap">
-                       <div id="navmenu" class="mainmenu">
-                           <ul class="nav">
-                                <li ><a data-scroll class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a></li>
-                                <li><a class="nav-link" href="{% static 'website/Lopez_Jose_Resume.pdf' %}">Resume</a></li>
-                                <li><a data-scroll class="nav-link" href="#portfolio">Portfolio</a></li>
-                                <li><a data-scroll class="nav-link" href="#about">About</a></li>
-                                <li><a data-scroll class="nav-link" href="#services">Skills</a></li>
-                                <li><a data-scroll class="nav-link" href="#contact">Contact</a></li>
-                            </ul>
-                       </div>
-                    </div>
-                </nav>
-            </div>
-        </header> <!-- /.header-section -->
-
-
-
-
-{% block content %}
+  <header id="header" class="header-section">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="navbar-brand">
+          <img class="logo-light" src="{% static 'website/img/light_2.png' %}" alt="JL">
+          <img class="logo-dark" src="{% static 'website/img/dark_1.png' %}" alt="JL">
+        </a>
+        <div class="d-flex menu-wrap">
+          <div id="navmenu" class="mainmenu">
+            <ul class="nav">
+              <li><a data-scroll class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a></li>
+              <li><a class="nav-link" href="{% static 'website/Lopez_Jose_Resume.pdf' %}">Resume</a></li>
+              <li><a data-scroll class="nav-link" href="#portfolio">Portfolio</a></li>
+              <li><a data-scroll class="nav-link" href="#about">About</a></li>
+              <li><a data-scroll class="nav-link" href="#services">Skills</a></li>
+              <li><a data-scroll class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header> <!-- /.header-section -->
 
 
 
 
-
-{% endblock %}
-
+  {% block content %}
 
 
 
-        <footer class="footer-section padding">
-			<div class="container">
-			    <div class="footer-wrap row align-items-center">
-                    <div class="col-lg-4 col-md-4 xs-padding">
-                        <div class="footer-img">
-                            <img src="{% static 'website/img/light_2.png' %}" alt="logo">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 xs-padding">
-                        <div class="footer-content text-center">
-                            <div class="copyright">&copy; 2020 Jose Lopez</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 xs-padding">
-                        <ul class="footer-social">
-                            <!-- <li><a href="#"><i class="social_facebook"></i></a></li>
+
+
+  {% endblock %}
+
+
+
+
+  <footer class="footer-section padding">
+    <div class="container">
+      <div class="footer-wrap row align-items-center">
+        <div class="col-lg-4 col-md-4 xs-padding">
+          <div class="footer-img">
+            <img src="{% static 'website/img/light_2.png' %}" alt="logo">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 xs-padding">
+          <div class="footer-content text-center">
+            <div class="copyright">&copy; 2020 Jose Lopez</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 xs-padding">
+          <ul class="footer-social">
+            <!-- <li><a href="#"><i class="social_facebook"></i></a></li>
                             <li><a href="#"><i class="social_twitter"></i></a></li>
                             <li><a href="#"><i class="social_googleplus"></i></a></li>
                             <li><a href="#"><i class="github"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/jjlopezbuilder/"><i class="social_linkedin"></i></a></li> -->
-                        </ul>
-                    </div>
-			    </div>
-			</div>
-		</footer><!-- /.footer-section -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer><!-- /.footer-section -->
 
 
 
 
 
-		<span title="Scroll to top"><a data-scroll href="#header" id="scroll-to-top"><i class="arrow_up"></i></a></span>
+  <span title="Scroll to top"><a data-scroll href="#header" id="scroll-to-top"><i class="arrow_up"></i></a></span>
 
-		<!-- jQuery Lib -->
-		<script src="{% static 'website/js/vendor/jquery-1.12.4.min.js' %}"></script>
-		<!-- Bootstrap JS -->
-		<script src="{% static 'website/js/vendor/bootstrap.min.js' %}"></script>
-        <!-- Imagesloaded JS -->
-    <script src="{% static 'website/js/vendor/imagesloaded.pkgd.min.js' %}"></script>
-		<!-- OWL-Carousel JS -->
-		<script src="{% static 'website/js/vendor/owl.carousel.min.js' %}"></script>
-		<!-- isotope JS -->
-		<script src="{% static 'website/js/vendor/jquery.isotope.v3.0.2.js' %}"></script>
-		<!-- Smooth Scroll JS -->
-		<script src="{% static 'website/js/vendor/smooth-scroll.min.js' %}"></script>
-		<!-- venobox JS -->
-		<script src="{% static 'website/js/vendor/venobox.min.js' %}"></script>
-		<!-- Slicknav JS -->
-		<script src="{% static 'website/js/vendor/jquery.slicknav.min.js' %}"></script>
-		<!-- Typed JS -->
-		<script src="{% static 'website/js/vendor/typed.min.js' %}"></script>
-		<!-- Particles JS -->
-		<script src="{% static 'website/js/vendor/particles.min.js' %}"></script>
-		<!-- App JS -->
-		<script src="{% static 'website/js/vendor/app.js' %}"></script>
-		<!-- WOW JS -->
-		<script src="{% static 'website/js/vendor/wow.min.js' %}"></script>
-		<!-- Contact JS -->
-		<script src="{% static 'website/js/contact.js' %}"></script>
-		<!-- Main JS -->
-		<script src="{% static 'website/js/main.js' %}"></script>
+  <!-- jQuery Lib -->
+  <script src="{% static 'website/js/vendor/jquery-1.12.4.min.js' %}"></script>
+  <!-- Bootstrap JS -->
+  <script src="{% static 'website/js/vendor/bootstrap.min.js' %}"></script>
+  <!-- Imagesloaded JS -->
+  <script src="{% static 'website/js/vendor/imagesloaded.pkgd.min.js' %}"></script>
+  <!-- OWL-Carousel JS -->
+  <script src="{% static 'website/js/vendor/owl.carousel.min.js' %}"></script>
+  <!-- isotope JS -->
+  <script src="{% static 'website/js/vendor/jquery.isotope.v3.0.2.js' %}"></script>
+  <!-- Smooth Scroll JS -->
+  <script src="{% static 'website/js/vendor/smooth-scroll.min.js' %}"></script>
+  <!-- venobox JS -->
+  <script src="{% static 'website/js/vendor/venobox.min.js' %}"></script>
+  <!-- Slicknav JS -->
+  <script src="{% static 'website/js/vendor/jquery.slicknav.min.js' %}"></script>
+  <!-- Typed JS -->
+  <script src="{% static 'website/js/vendor/typed.min.js' %}"></script>
+  <!-- Particles JS -->
+  <script src="{% static 'website/js/vendor/particles.min.js' %}"></script>
+  <!-- App JS -->
+  <script src="{% static 'website/js/vendor/app.js' %}"></script>
+  <!-- WOW JS -->
+  <script src="{% static 'website/js/vendor/wow.min.js' %}"></script>
+  <!-- Contact JS -->
+  <script src="{% static 'website/js/contact.js' %}"></script>
+  <!-- Main JS -->
+  <script src="{% static 'website/js/main.js' %}"></script>
 
-    </body>
+</body>
+
 </html>
