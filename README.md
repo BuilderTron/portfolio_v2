@@ -1,8 +1,6 @@
 # Jose Lopez Portfolio
 **Version 2**
 
----
-
 This is Jose Lopez's software development portfolio containing up to date
 Resume, projects, and contact information.
 
