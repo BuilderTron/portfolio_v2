@@ -4,6 +4,33 @@
 {% block content %}
 
 
+<header id="header" class="header-section">
+  <div class="container">
+    <nav class="navbar">
+      <a href="#" class="navbar-brand">
+        <img class="logo-light" src="{% static 'website/img/light_2.png' %}" alt="JL">
+        <img class="logo-dark" src="{% static 'website/img/dark_1.png' %}" alt="JL">
+      </a>
+      <div class="d-flex menu-wrap">
+        <div id="navmenu" class="mainmenu">
+          <ul class="nav">
+            <li><a data-scroll class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a></li>
+            {% for resume in resumes %}
+            <li><a class="nav-link" href="{{ resume.resumefile.url }}">Resume</a></li>
+            {% endfor %}
+            <li><a data-scroll class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a data-scroll class="nav-link" href="#about">About</a></li>
+            <li><a data-scroll class="nav-link" href="#services">Skills</a></li>
+            <li><a data-scroll class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header> <!-- /.header-section -->
+
+
+
 <!-- TODO Make header editable via admin instead of hardcoded. -->
 
 <section id="home" class="hero-section d-flex align-items-center">
@@ -71,9 +98,10 @@
             <br>
             <br>
             Jose enjoys various types of photography and has a passion for travel.
-
           </p>
-          <a href="#" class="default-btn">Download Resume</a>
+          {% for resume in resumes %}
+          <a href="{{ resume.resumefile.url }}" class="default-btn">Resume</a>
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -100,13 +128,15 @@
           <div class="service-content">
             <h3>Technical</h3>
             <p>
-              Git (Git Flow)
+              Git (Git Flow),
               <br>
-              GitHub
+              GitHub,
               <br>
-              Chrome Developer Tools
+              Chrome Developer Tools,
               <br>
-              VirtualBox
+              VirtualBox,
+              <br>
+              C.R.U.D.
             </p>
           </div>
         </div>
@@ -120,11 +150,11 @@
           <div class="service-content">
             <h3>Front End</h3>
             <p>
-              HTML5/CSS
+              HTML5/CSS,
               <br>
-              Javascript
+              Javascript,
               <br>
-              Bootstrap
+              Bootstrap.
               <br>
             </p>
           </div>
@@ -139,15 +169,15 @@
           <div class="service-content">
             <h3>Back End</h3>
             <p>
-              Python
+              Python,
               <br>
-              Django
+              Django,
               <br>
-              REST API
+              REST API,
               <br>
-              Vagrant
+              Vagrant,
               <br>
-              SQLite
+              SQLite.
             </p>
           </div>
         </div>
