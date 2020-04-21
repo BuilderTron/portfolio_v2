@@ -27,7 +27,7 @@ def home(request):
         )
 
 
-        return render(request, 'home.html', {'name': name}, {'projects':projects, 'resumes':resumes})
+        return render(request, 'website/home.html', {'name': name}, {'projects':projects, 'resumes':resumes})
 
     else:
-        return render(request, 'home.html', {'projects':projects, 'resumes':resumes})
+        return render(request, 'website/home.html', {'projects':projects, 'resumes':resumes})
