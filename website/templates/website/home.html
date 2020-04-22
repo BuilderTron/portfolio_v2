@@ -16,7 +16,7 @@
           <ul class="nav">
             <li><a data-scroll class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a></li>
             {% for resume in resumes %}
-            <li><a class="nav-link" href="{{ resume.resumefile.url }}">Resume</a></li>
+            <li><a class="nav-link" href="{{ resume.resumefile.url }}" target="_blank">Resume</a></li>
             {% endfor %}
             <li><a data-scroll class="nav-link" href="#portfolio">Portfolio</a></li>
             <li><a data-scroll class="nav-link" href="#about">About</a></li>
@@ -40,9 +40,9 @@
       <h1><span>JOSE</span> LOPEZ</h1>
       <h2>SOFTWARE DEVELOPER</h2>
       <ul>
-        <li><span title="LinkedIn"><a href="https://www.linkedin.com/in/jjlopezbuilder/"><i class="fa fa-linkedin"></i></a></span></li>
-        <li><span title="Email"><a data-scroll class="nav-link" href="mailto:jj.lopezbuilder@gmail.com"><i class="fa fa-envelope"></i></a></span></li>
-        <li><span title="GitHub"><a href="https://github.com/BuilderTron"><i class="fa fa-github"></i></a></span></li>
+        <li><span title="LinkedIn"><a href="https://www.linkedin.com/in/jjlopezbuilder/" target="_blank"><i class="fa fa-linkedin"></i></a></span></li>
+        <li><span title="Email"><a data-scroll class="nav-link" href="mailto:jj.lopezbuilder@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></span></li>
+        <li><span title="GitHub"><a href="https://github.com/BuilderTron" target="_blank"><i class="fa fa-github"></i></a></span></li>
       </ul>
       {% if name %}
       <br>
@@ -56,7 +56,7 @@
 </section><!-- /.hero-section -->
 
 
-<!-- TODO Make mobile responsive projects by automatically showing links. -->
+
 <!-- Portfolio Projects -->
 
 <section id="portfolio" class="portfolio-section padding bd-bottom">
@@ -72,10 +72,10 @@
         <div class="portfolio-box">
           <img src="{{ project.image.url }}">
           <div class="portfolio-content">
-            <h3><a href="{{ project.url }}" style="color:white" >{{ project.title }}</a></h3>
+            <h3><a href="{{ project.url }}" style="color:white" target="_blank">{{ project.title }}</a></h3>
             <p>{{ project.description }}</p>
           </div>
-          <a href="{{ project.git_url }}" data-gall="gallery" class="img-lightbox"><img src="static\website\img\GitHub-Mark-Light-32px.png" /></a>
+          <a href="{{ project.git_url }}" data-gall="gallery" class="img-lightbox" target="_blank"><img src="static\website\img\GitHub-Mark-Light-32px.png" /></a>
         </div>
       </div>
       {% endfor %}
@@ -101,7 +101,7 @@
             Jose enjoys various types of photography and has a passion for travel.
           </p>
           {% for resume in resumes %}
-          <a href="{{ resume.resumefile.url }}" class="default-btn">Resume</a>
+          <a href="{{ resume.resumefile.url }}" class="default-btn" target="_blank">Resume</a>
           {% endfor %}
         </div>
       </div>
@@ -193,23 +193,23 @@
 
 <section id="contact" class="contact-section padding bg-grey">
   <div class="container">
-    <div class="contact-wrap row">
-      <div class="col-md-6">
-        <div class="contact-content">
-          <h2>Contact Info:</h2>
+    <div class="contact-wrap">
+      <div class="col-md-6 centered">
+        <div class="section-heading text-center mb-40">
+          <h2>Get in touch</h2>
           <br>
-          <br>
-          <p> </p>
+          <p> Have a question or need a quote? Fill out the contact form below and I'll get back to you as soon as possible. <br>Let's make something awesome. </p>
         </div>
-        <div class="contact-info">
+        <!-- <div class="contact-info">
           <ul class="contact-list">
             <li><i class="fa fa-map-marker"></i>Katy, Tx 77493</li>
             <li><i class="fa fa-phone"></i><a href="tel:+12813800931">281 380 0931</a></li>
             <li><i class="fa fa-mail-reply"></i><a href="mailto:jj.lopezbuilder@gmail.com">JJ.LopezBuilder@Gmail.com</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
-      <div class="col-md-6">
+
+      <div class="col-md-6 centered">
 
         <div class="contact-items">
           <form action="{% url 'home' %}" method="post" class="form-horizontal contact-form">

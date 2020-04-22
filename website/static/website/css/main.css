@@ -863,19 +863,19 @@ ul.nav>li>a:hover {
   width: 30px;
   height: 30px;
   position: absolute;
-  right: -100%;
+  right: 10%;
   top: 20px;
   z-index: 1;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0.6;
+  visibility: visible;
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio-box:hover .img-lightbox {
+/* .portfolio-box:hover .img-lightbox {
   opacity: 0.6;
   visibility: visible;
   right: 20px;
-}
+} */
 
 .portfolio-box:hover .img-lightbox:hover {
   opacity: 1;
@@ -896,17 +896,17 @@ ul.nav>li>a:hover {
   padding: 0 40px;
   left: 0;
   bottom: 30px;
-  transform: translateX(-100%);
+  transform: translateX(0);
   transition: all 0.3s ease-in-out;
   z-index: 1;
   color: #FFFFFF;
 }
 
-.portfolio-box:hover .portfolio-content {
+/* .portfolio-box:hover .portfolio-content {
   transform: translateX(0);
   transition: all 0.3s ease-in-out;
   color: #FFFFFF;
-}
+} */
 
 .portfolio-content h3 a:hover {
   text-decoration: underline;
