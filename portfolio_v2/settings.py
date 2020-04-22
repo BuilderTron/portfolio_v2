@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'website',
     'random_password_generator',
+    'todo',
 ]
 
 MIDDLEWARE = [

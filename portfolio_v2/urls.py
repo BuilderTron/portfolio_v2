@@ -26,6 +26,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home, name="home"),
     path('rpg/',include('random_password_generator.urls')),
+    path('todo/',include('todo.urls')),
 
 
 ]
