@@ -48,7 +48,7 @@
       <br>
       <center>
         <h2> Thanks {{ name }}!</h2>
-        <p>We received your email & will respond shortly...</p>
+        <p style="color:white">We received your email & will respond shortly...</p>
       </center>
       {% endif %}
     </div>
@@ -90,22 +90,22 @@
 <section id="about" class="about-section bd-bottom padding bg-grey">
   <div class="container">
     <div class="about-wrap row">
-      <div class="col-md-6 ">
-        <div class="section-heading">
-          <!-- <h4>About Me</h4> -->
-          <h2>About <span> Jose</span></h2>
-          <p>Jose Lopez is a Software Developer that can bring a diverse skill set and a creative drive to software and web development. He is proficient in adapting to new language technologies and frameworks to find unique solutions to development
-            problems.
-            <br>
-            <br>
-            Jose enjoys various types of photography and has a passion for travel.
-          </p>
-          {% for resume in resumes %}
-          <a href="{{ resume.resumefile.url }}" class="default-btn" target="_blank">Resume</a>
-          {% endfor %}
-        </div>
+    <div class="col-md-6 ">
+      <div class="section-heading">
+        <!-- <h4>About Me</h4> -->
+        <h2>About <span> Jose</span></h2>
+        <p>Jose Lopez is a Software Developer that can bring a diverse skill set and a creative drive to software and web development. He is proficient in adapting to new language technologies and frameworks to find unique solutions to development
+          problems.
+          <br>
+          <br>
+          Jose enjoys various types of photography and has a passion for travel.
+        </p>
+        {% for resume in resumes %}
+        <a href="{{ resume.resumefile.url }}" class="default-btn" target="_blank">Resume</a>
+        {% endfor %}
       </div>
     </div>
+  </div>
   </div>
   <div class="about-men d-none d-md-block"></div>
 </section><!-- /.about-section -->
