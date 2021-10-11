@@ -8,7 +8,7 @@ from .models import Project, Resume
 
 def home(request):
 
-    projects = Project.objects.all()
+    projects = Project.objects.all().order_by('-created')
     resumes = Resume.objects.all()
 
 
@@ -17,12 +17,16 @@ def home(request):
         email = request.POST['email']
         message = request.POST['message']
 
+        msg_mail = "Name: " + str(name) + "\n\nEmail: " + str(email) + "\n\nMessage: " + str(message)
+
+
         #Send email
         send_mail(
-        name,#Subject
-        message,#Message
-        email,#From Email
-        ['jj.lopezbuilder@gmail.com'],#Email To
+            'Portfolio: ' + name,
+            msg_mail,
+            email,
+            ['jj.lopezbuilder@gmail.com'],#Email To
+            fail_silently=False,
         )
 
 
